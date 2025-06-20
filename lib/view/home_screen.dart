@@ -1,4 +1,6 @@
+import 'package:dataflows_dev_test/view/widgets/action_buttons.dart';
 import 'package:dataflows_dev_test/view/widgets/home_header.dart';
+import 'package:dataflows_dev_test/view/widgets/icon_buttons.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -20,6 +22,16 @@ class HomeScreen extends StatelessWidget {
               fit: BoxFit.cover,
               width: double.infinity,
             ),
+
+            const SizedBox(height: 10),
+
+            // Three action buttons
+            const ActionButtons(),
+
+            const SizedBox(height: 10),
+
+            // Icon buttons
+            const IconButtonsExplicit(),
           ],
         ),
       ),

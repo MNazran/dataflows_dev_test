@@ -12,7 +12,7 @@ class HomeHeader extends StatelessWidget {
       ),
       child: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(12),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -25,7 +25,7 @@ class HomeHeader extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              const SizedBox(height: 12),
+              //const SizedBox(height: 12),
 
               // Next Appointment with lines
               Row(
@@ -220,6 +220,7 @@ class HomeHeader extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(height: 12),
             ],
           ),
         ),
