@@ -16,42 +16,40 @@ class NewServices extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      'NEW SERVICES',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      'Recommended based on your preference',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.grey[600],
-                      ),
-                    ),
-                  ],
+                const Text(
+                  'NEW SERVICES',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
                 ),
                 GestureDetector(
                   onTap: () {},
-                  child: const Text(
+                  child: Text(
                     'View All',
                     style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w500,
-                      color: Color(0xFF244B3A),
+                      color: Colors.grey[600],
                     ),
                   ),
-                )
+                ),
               ],
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Text(
+              'Recommended based on your preference',
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w400,
+                color: Colors.grey[600],
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
         ],
       ),
     );
