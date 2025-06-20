@@ -1,7 +1,9 @@
 import 'package:dataflows_dev_test/view/widgets/action_buttons.dart';
 import 'package:dataflows_dev_test/view/widgets/home_header.dart';
 import 'package:dataflows_dev_test/view/widgets/icon_buttons.dart';
+import 'package:dataflows_dev_test/view/widgets/new_services.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,10 +15,10 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // Header Section
+            // header section
             const HomeHeader(),
 
-            // Banner
+            // banner
             Image.asset(
               'assets/images/home-banner.jpg',
               fit: BoxFit.cover,
@@ -25,13 +27,18 @@ class HomeScreen extends StatelessWidget {
 
             const SizedBox(height: 10),
 
-            // Three action buttons
+            // three action buttons
             const ActionButtons(),
 
             const SizedBox(height: 10),
 
-            // Icon buttons
+            // icon buttons
             const IconButtonsExplicit(),
+
+            const SizedBox(height: 10),
+
+            // new services
+            const NewServices(),
           ],
         ),
       ),
