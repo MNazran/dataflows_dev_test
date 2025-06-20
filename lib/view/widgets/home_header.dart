@@ -44,7 +44,7 @@ class HomeHeader extends StatelessWidget {
                       'NEXT APPOINTMENT',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 12,
+                        fontSize: 8,
                         fontWeight: FontWeight.w500,
                         letterSpacing: 1.5,
                       ),
@@ -63,47 +63,44 @@ class HomeHeader extends StatelessWidget {
               // Appointment Details Row
               const Row(
                 children: [
-                  Icon(
-                    Icons.calendar_today,
-                    color: Colors.white70,
-                    size: 16,
+                  Image(
+                    image: AssetImage('assets/images/icon-calender.png'),
+                    height: 16,
                   ),
                   SizedBox(width: 8),
                   Text(
                     '14 Oct 2020',
                     style: TextStyle(
-                      fontSize: 14,
+                      fontSize: 13,
                       fontWeight: FontWeight.w400,
                       color: Colors.white,
                     ),
                   ),
                   SizedBox(width: 20),
-                  Icon(
-                    Icons.access_time,
-                    color: Colors.white70,
-                    size: 16,
+                  Image(
+                    image: AssetImage('assets/images/icon-clock-full.png'),
+                    height: 16,
                   ),
                   SizedBox(width: 8),
                   Text(
                     '12:30 PM',
                     style: TextStyle(
-                      fontSize: 14,
+                      fontSize: 13,
                       fontWeight: FontWeight.w400,
                       color: Colors.white,
                     ),
                   ),
                   SizedBox(width: 20),
-                  Icon(
-                    Icons.location_on,
-                    color: Colors.white70,
-                    size: 16,
+                  Image(
+                    image: AssetImage('assets/images/icon-location-full.png'),
+                    height: 16,
                   ),
                   SizedBox(width: 8),
                   Expanded(
                     child: Text(
-                      '123 Plant Street, 1/1 ...',
+                      '123 Plant Street, 1/1',
                       style: TextStyle(
-                        fontSize: 14,
+                        fontSize: 13,
                         fontWeight: FontWeight.w400,
                         color: Colors.white,
                       ),
@@ -111,11 +108,10 @@ class HomeHeader extends StatelessWidget {
                       maxLines: 1,
                     ),
                   ),
-                  Icon(
-                    Icons.arrow_forward_ios,
-                    color: Colors.white70,
-                    size: 16,
-                  ),
+                  Image(
+                    image: AssetImage('assets/images/icon-arrow-circle.png'),
+                    height: 24,
+                  )
                 ],
               ),
               const SizedBox(height: 12),
