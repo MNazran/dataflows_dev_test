@@ -1,3 +1,4 @@
+import 'package:dataflows_dev_test/view/widgets/home_header.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,36 +12,14 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             // Header Section
-            Container(
+            const HomeHeader(),
+
+            // Banner
+            Image.asset(
+              'assets/images/home-banner.jpg',
+              fit: BoxFit.cover,
               width: double.infinity,
-              decoration: const BoxDecoration(
-                color: Color(0xFF244B3A),
-              ),
-              child: const SafeArea(
-                  child: Padding(
-                padding: EdgeInsets.all(20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    //Logo
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'LOGO',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 44,
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                      ],
-                    )
-                  ],
-                ),
-              )),
-            )
+            ),
           ],
         ),
       ),
