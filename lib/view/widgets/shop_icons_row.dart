@@ -59,17 +59,6 @@ class _ShopIconsRowState extends State<ShopIconsRow> {
       padding: const EdgeInsets.only(left: 10),
       child: Stack(
         children: [
-          // Long thin line that spans the entire width
-          Positioned(
-            bottom: 2,
-            left: 16,
-            right: 16,
-            child: Container(
-              height: 1,
-              color: const Color(0xFF244B3A),
-            ),
-          ),
-
           Row(
             children: [
               // Main static icon (bigger, stays fixed)
@@ -164,6 +153,17 @@ class _ShopIconsRowState extends State<ShopIconsRow> {
             ],
           ),
 
+          // Long thin line that spans the entire width
+          Positioned(
+            bottom: 2,
+            left: 16,
+            right: 16,
+            child: Container(
+              height: 1,
+              color: const Color(0xFF244B3A),
+            ),
+          ),
+
           // Single moving thick indicator line
           AnimatedPositioned(
             duration: const Duration(milliseconds: 200),
@@ -172,7 +172,7 @@ class _ShopIconsRowState extends State<ShopIconsRow> {
             left: _indicatorPosition,
             child: Container(
               width: _selectedIndex == 0
-                  ? 70
+                  ? 60
                   : 50, // Wider for main icon, narrower for scrollable icons
               height: 4,
               decoration: BoxDecoration(
