@@ -31,6 +31,14 @@ class NewServices extends StatelessWidget {
     },
   ];
 
+  static const List<String> _scrollableIcons = [
+    'assets/images/shop-plants-icon-1.png',
+    'assets/images/shop-plants-icon-2.png',
+    'assets/images/shop-plants-icon-3.png',
+    'assets/images/shop-plants-icon-4.png',
+    'assets/images/shop-plants-icon-5.png',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -105,6 +113,83 @@ class NewServices extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
+
+          // Scrollable icons
+          Container(
+            height: 80,
+            child: Stack(
+              children: [
+                // Scrollable icons (1st layer)
+                Positioned(
+                  left: 16,
+                  right: 0,
+                  top: 0,
+                  bottom: 0,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    padding: const EdgeInsets.only(left: 100, right: 16),
+                    itemCount: _scrollableIcons.length,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        margin: const EdgeInsets.only(right: 20),
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Image.asset(
+                            _scrollableIcons[index],
+                            width: 50,
+                            height: 50,
+                            fit: BoxFit.contain,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+
+                // Positioned(
+                //   child: Container(
+                //     decoration: BoxDecoration(
+                //       gradient: LinearGradient(
+                //         begin: Alignment.centerLeft,
+                //         end: Alignment.centerRight,
+                //         colors: [
+                //           Colors.grey[100]!.withOpacity(0.0),
+                //           Colors.grey[100]!.withOpacity(0.8),
+                //           Colors.grey[100]!,
+                //         ],
+                //       ),
+                //     ),
+                //   ),
+                // ),
+
+                // Main static icon (2nd layer)
+                Positioned(
+                  left: 10,
+                  top: 0,
+                  child: Image.asset(
+                    'assets/images/shop-plants-icon-main.png',
+                    width: 70,
+                    height: 70,
+                    fit: BoxFit.contain,
+                  ),
+                ),
+
+                // Green line
+                Positioned(
+                  left: 16,
+                  bottom: 5,
+                  child: Container(
+                    width: 70,
+                    height: 3,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF244B3A),
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
