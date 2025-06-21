@@ -1,4 +1,5 @@
 import 'package:dataflows_dev_test/controllers/navigation_controller.dart';
+import 'package:dataflows_dev_test/view/discover_screen.dart';
 import 'package:dataflows_dev_test/view/home_screen.dart';
 import 'package:dataflows_dev_test/view/mall_screen.dart';
 import 'package:dataflows_dev_test/view/widgets/custom_bottom_navbar.dart';
@@ -23,6 +24,7 @@ class MainScreen extends StatelessWidget {
             children: const [
               HomeScreen(),
               MallScreen(),
+              DiscoverScreen(),
             ],
           ),
         ),
