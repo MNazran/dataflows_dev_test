@@ -1,6 +1,6 @@
 # DataFlows UI Development Test
 
-This project is a Flutter UI development test, focusing solely on implementing various user interface components and navigation.
+This project is a Flutter UI development test, focusing solely on implementing various user interface components and navigation. [Demo](https://appetize.io/app/b_6ghjkytgkeebom27jk6hnjm4wu)
 
 ### Technologies Used
 
@@ -9,13 +9,39 @@ This project is a Flutter UI development test, focusing solely on implementing v
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1.  Clone the repository
 
-A few resources to get you started if this is your first Flutter project:
+```
+git clone <repository_url>
+cd <project_directory_name>
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2.  Install dependencies
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+flutter pub get
+```
+
+3. Prepare Environment File (.env)
+
+- In the root directory of your project (at the same level as pubspec.yaml), create a file named .env
+- Inside .env, add your Google Maps API key:
+
+```
+GOOGLE_MAP_API_KEY=Y0UR_G00GL3_M4PS_4P1_K3Y_H3R3
+```
+
+4.  Add Assets to pubspec.yaml
+
+```
+flutter:
+  assets:
+    - assets/images/
+    - .env
+```
+
+5.  Run the application
+
+```
+flutter run
+```
