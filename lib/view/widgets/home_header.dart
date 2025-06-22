@@ -133,7 +133,7 @@ class HomeHeader extends StatelessWidget {
                             Text(
                               'CREDIT',
                               style: TextStyle(
-                                fontSize: 10,
+                                fontSize: 11,
                                 fontWeight: FontWeight.w500,
                                 color: Color(0xFF244B3A),
                                 letterSpacing: 1.0,
@@ -142,7 +142,7 @@ class HomeHeader extends StatelessWidget {
                             Text(
                               'RM100.00',
                               style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xFF244B3A),
                               ),
@@ -164,7 +164,7 @@ class HomeHeader extends StatelessWidget {
                             Text(
                               'POINTS',
                               style: TextStyle(
-                                fontSize: 10,
+                                fontSize: 11,
                                 fontWeight: FontWeight.w500,
                                 color: Color(0xFF244B3A),
                                 letterSpacing: 1.0,
@@ -173,7 +173,7 @@ class HomeHeader extends StatelessWidget {
                             Text(
                               '10',
                               style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xFF244B3A),
                               ),
@@ -195,7 +195,7 @@ class HomeHeader extends StatelessWidget {
                             Text(
                               'PACKAGE',
                               style: TextStyle(
-                                fontSize: 10,
+                                fontSize: 11,
                                 fontWeight: FontWeight.w500,
                                 color: Color(0xFF244B3A),
                                 letterSpacing: 1.0,
@@ -204,7 +204,7 @@ class HomeHeader extends StatelessWidget {
                             Text(
                               '1',
                               style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xFF244B3A),
                               ),

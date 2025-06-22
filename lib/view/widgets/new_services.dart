@@ -9,7 +9,7 @@ class NewServices extends StatelessWidget {
     {
       'imageUrl': 'assets/images/image.jpg',
       'title': 'Lorem Ipsum',
-      'description': 'Lorem ipsum dolor sit amet consectetur',
+      'description': 'Lorem ipsum dolor sit amet',
       'price': 'RM 10.00',
     },
     {
@@ -48,7 +48,7 @@ class NewServices extends StatelessWidget {
                 const Text(
                   'NEW SERVICES',
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
                   ),
@@ -91,7 +91,7 @@ class NewServices extends StatelessWidget {
                 final product = _products[index];
                 return Container(
                   margin: EdgeInsets.only(
-                    right: index < _products.length - 1 ? 12 : 0,
+                    right: index < _products.length - 1 ? 10 : 0,
                   ),
                   child: ProductCard(
                     imageUrl: product['imageUrl']!,

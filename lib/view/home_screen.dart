@@ -5,7 +5,6 @@ import 'package:dataflows_dev_test/view/widgets/location_details.dart';
 import 'package:dataflows_dev_test/view/widgets/new_services.dart';
 import 'package:dataflows_dev_test/view/widgets/trending_discoveries.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
