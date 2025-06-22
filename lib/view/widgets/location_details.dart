@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class LocationDetails extends StatelessWidget {
   const LocationDetails({super.key});
@@ -20,6 +21,7 @@ class LocationDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final String? googleMapApiKey = dotenv.env['GOOGLE_MAP_API_KEY'];
     return Container(
       width: double.infinity,
       color: Colors.white,
@@ -31,7 +33,7 @@ class LocationDetails extends StatelessWidget {
           const Text(
             'LOCATION',
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 15,
               fontWeight: FontWeight.w700,
               color: Colors.black,
             ),
@@ -48,33 +50,41 @@ class LocationDetails extends StatelessWidget {
               color: Colors.grey[200],
             ),
             child: ClipRRect(
-                borderRadius: BorderRadius.circular(5),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.map,
-                          size: 48,
-                          color: Colors.grey[400],
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          'Supposedly a map',
-                          style: TextStyle(
-                            color: Colors.grey[600],
-                            fontSize: 16,
-                          ),
-                        ),
-                      ],
+              borderRadius: BorderRadius.circular(5),
+              child: Image.network(
+                'https://maps.googleapis.com/maps/api/staticmap?center=Kuala+Lumpur,Malaysia&zoom=12&size=400x200&maptype=roadmap&markers=color:red%7CKuala+Lumpur,Malaysia&key=$googleMapApiKey',
+                fit: BoxFit.cover,
+                errorBuilder: (context, error, stackTrace) {
+                  // Fallback when map fails to load
+                  return Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(12),
                     ),
-                  ),
-                )),
+                    child: Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.map,
+                            size: 48,
+                            color: Colors.grey[400],
+                          ),
+                          const SizedBox(height: 8),
+                          Text(
+                            'Map View',
+                            style: TextStyle(
+                              color: Colors.grey[600],
+                              fontSize: 15,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
           ),
 
           const SizedBox(height: 20),
@@ -84,7 +94,8 @@ class LocationDetails extends StatelessWidget {
             final location = _locations[index];
             return Padding(
               padding: EdgeInsets.only(
-                  bottom: index < _locations.length - 1 ? 25 : 0),
+                bottom: index < _locations.length - 1 ? 25 : 0,
+              ),
               child: _buildLocationItem(
                 name: location['name']!,
                 address: location['address']!,
@@ -111,7 +122,7 @@ class LocationDetails extends StatelessWidget {
         Text(
           name,
           style: const TextStyle(
-            fontSize: 16,
+            fontSize: 15,
             fontWeight: FontWeight.w600,
             color: Colors.black,
           ),

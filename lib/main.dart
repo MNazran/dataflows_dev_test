@@ -1,9 +1,14 @@
 import 'package:dataflows_dev_test/controllers/navigation_controller.dart';
 import 'package:dataflows_dev_test/view/main_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get/get.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await dotenv.load(fileName: '.env');
+
   Get.put(NavigationController());
   runApp(const MyApp());
 }

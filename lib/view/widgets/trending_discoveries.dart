@@ -101,6 +101,12 @@ class TrendingDiscoveries extends StatelessWidget {
                 title: _trendingProducts[3]['title']!,
                 description: _trendingProducts[3]['description']!,
               ),
+              const SizedBox(height: 10),
+              _buildProductCard(
+                imageUrl: _trendingProducts[3]['imageUrl']!,
+                title: _trendingProducts[3]['title']!,
+                description: _trendingProducts[3]['description']!,
+              ),
             ],
           ),
         ),
