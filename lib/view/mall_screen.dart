@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:dataflows_dev_test/view/widgets/product_grid.dart';
 import 'package:dataflows_dev_test/view/widgets/custom_search_bar.dart';
 
 class MallScreen extends StatelessWidget {
@@ -9,6 +10,7 @@ class MallScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFF4F4F4),
       appBar: _buildAppBar(context),
+      body: const ProductGrid(),
     );
   }
 
@@ -19,11 +21,11 @@ class MallScreen extends StatelessWidget {
       leading: GestureDetector(
         onTap: () {},
         child: Container(
-          margin: const EdgeInsets.all(12),
+          margin: const EdgeInsets.all(20),
           child: Image.asset(
             'assets/images/icon-arrow.png',
-            width: 12,
-            height: 12,
+            width: 8,
+            height: 8,
             fit: BoxFit.contain,
           ),
         ),

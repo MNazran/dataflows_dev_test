@@ -9,6 +9,18 @@ class CustomSearchBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 40,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            spreadRadius: 1,
+            blurRadius: 5,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
       child: TextField(
         onChanged: (text) {
           debugPrint('Search text changed: $text');
@@ -16,7 +28,7 @@ class CustomSearchBar extends StatelessWidget {
         decoration: InputDecoration(
           hintText: 'Search Salon',
           hintStyle: const TextStyle(
-            color: Colors.grey,
+            color: Color(0xFF707070),
             fontSize: 14,
             fontWeight: FontWeight.w400,
           ),
@@ -41,8 +53,6 @@ class CustomSearchBar extends StatelessWidget {
               ),
             ),
           ),
-          filled: true,
-          fillColor: Colors.white,
           contentPadding:
               const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           border: OutlineInputBorder(
@@ -52,14 +62,14 @@ class CustomSearchBar extends StatelessWidget {
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(20),
             borderSide: BorderSide(
-              color: Colors.grey.withOpacity(0.2),
+              color: const Color(0xFF707070).withOpacity(0.2),
               width: 1,
             ),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(20),
             borderSide: BorderSide(
-              color: Colors.grey.withOpacity(0.3),
+              color: const Color(0xFF707070).withOpacity(0.3),
               width: 1,
             ),
           ),
