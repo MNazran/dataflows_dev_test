@@ -1,6 +1,11 @@
-# dataflows_dev_test
+# DataFlows UI Development Test
 
-A new Flutter project.
+This project is a Flutter UI development test, focusing solely on implementing various user interface components and navigation.
+
+### Technologies Used
+
+- Flutter: UI Toolkit
+- GetX: state management, simplified navigation.
 
 ## Getting Started
 
