@@ -61,14 +61,14 @@ class HomeHeader extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               // Appointment Details Row
-              const Row(
+              Row(
                 children: [
-                  Image(
+                  const Image(
                     image: AssetImage('assets/images/icon-calender.png'),
                     height: 16,
                   ),
-                  SizedBox(width: 8),
-                  Text(
+                  const SizedBox(width: 8),
+                  const Text(
                     '14 Oct 2020',
                     style: TextStyle(
                       fontSize: 13,
@@ -76,13 +76,13 @@ class HomeHeader extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(width: 20),
-                  Image(
+                  const SizedBox(width: 20),
+                  const Image(
                     image: AssetImage('assets/images/icon-clock-full.png'),
                     height: 16,
                   ),
-                  SizedBox(width: 8),
-                  Text(
+                  const SizedBox(width: 8),
+                  const Text(
                     '12:30 PM',
                     style: TextStyle(
                       fontSize: 13,
@@ -90,13 +90,13 @@ class HomeHeader extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(width: 20),
-                  Image(
+                  const SizedBox(width: 20),
+                  const Image(
                     image: AssetImage('assets/images/icon-location-full.png'),
                     height: 16,
                   ),
-                  SizedBox(width: 8),
-                  Expanded(
+                  const SizedBox(width: 8),
+                  const Expanded(
                     child: Text(
                       '123 Plant Street, 1/1',
                       style: TextStyle(
@@ -108,10 +108,21 @@ class HomeHeader extends StatelessWidget {
                       maxLines: 1,
                     ),
                   ),
-                  Image(
-                    image: AssetImage('assets/images/icon-arrow-circle.png'),
-                    height: 24,
-                  )
+                  Material(
+                    color: Colors.transparent,
+                    child: InkWell(
+                      onTap: () {},
+                      borderRadius: BorderRadius.circular(24),
+                      child: const Padding(
+                        padding: EdgeInsets.all(4.0),
+                        child: Image(
+                          image:
+                              AssetImage('assets/images/icon-arrow-circle.png'),
+                          height: 24,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(height: 12),

@@ -26,12 +26,14 @@ class IconButtonsExplicit extends StatelessWidget {
   }
 
   Widget _buildIconButton(String imagePath, VoidCallback onTap) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Image.asset(
-        imagePath,
-        fit: BoxFit.contain,
-      ),
-    );
+    return Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          child: Image.asset(
+            imagePath,
+            fit: BoxFit.contain,
+          ),
+        ));
   }
 }

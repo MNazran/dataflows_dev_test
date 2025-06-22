@@ -41,18 +41,20 @@ class CustomSearchBar extends StatelessWidget {
               fit: BoxFit.contain,
             ),
           ),
-          suffixIcon: GestureDetector(
-            onTap: () {},
-            child: Padding(
-              padding: const EdgeInsets.all(12),
-              child: Image.asset(
-                'assets/images/icon-filter.png',
-                width: 16,
-                height: 16,
-                fit: BoxFit.contain,
-              ),
-            ),
-          ),
+          suffixIcon: Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Image.asset(
+                    'assets/images/icon-filter.png',
+                    width: 16,
+                    height: 16,
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              )),
           contentPadding:
               const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           border: OutlineInputBorder(

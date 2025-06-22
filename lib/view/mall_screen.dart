@@ -18,15 +18,18 @@ class MallScreen extends StatelessWidget {
     return AppBar(
       backgroundColor: Colors.white,
       elevation: 0,
-      leading: GestureDetector(
-        onTap: () {},
-        child: Container(
-          margin: const EdgeInsets.all(20),
-          child: Image.asset(
-            'assets/images/icon-arrow.png',
-            width: 8,
-            height: 8,
-            fit: BoxFit.contain,
+      leading: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () {},
+          child: Container(
+            margin: const EdgeInsets.all(20),
+            child: Image.asset(
+              'assets/images/icon-arrow.png',
+              width: 8,
+              height: 8,
+              fit: BoxFit.contain,
+            ),
           ),
         ),
       ),

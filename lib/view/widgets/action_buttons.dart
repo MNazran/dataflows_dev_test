@@ -10,33 +10,40 @@ class ActionButtons extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
-            child: GestureDetector(
-              onTap: () {},
-              child: Image.asset(
-                'assets/images/button-shop.png',
-                fit: BoxFit.cover,
+            child: Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: () {},
+                child: Image.asset(
+                  'assets/images/button-shop.png',
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),
           const SizedBox(width: 10),
           Expanded(
-            child: GestureDetector(
-              onTap: () {},
-              child: Image.asset(
-                'assets/images/button-services.png',
-                fit: BoxFit.cover,
-              ),
-            ),
+            child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: () {},
+                  child: Image.asset(
+                    'assets/images/button-services.png',
+                    fit: BoxFit.cover,
+                  ),
+                )),
           ),
           const SizedBox(width: 10),
           Expanded(
-            child: GestureDetector(
-              onTap: () {},
-              child: Image.asset(
-                'assets/images/button-posts.png',
-                fit: BoxFit.cover,
-              ),
-            ),
+            child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: () {},
+                  child: Image.asset(
+                    'assets/images/button-posts.png',
+                    fit: BoxFit.cover,
+                  ),
+                )),
           ),
         ],
       ),

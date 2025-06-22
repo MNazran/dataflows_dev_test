@@ -53,17 +53,19 @@ class NewServices extends StatelessWidget {
                     color: Colors.black,
                   ),
                 ),
-                GestureDetector(
-                  onTap: () {},
-                  child: Text(
-                    'View All',
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.grey[600],
-                    ),
-                  ),
-                ),
+                Material(
+                    color: Colors.transparent,
+                    child: InkWell(
+                      onTap: () {},
+                      child: Text(
+                        'View All',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.grey[600],
+                        ),
+                      ),
+                    )),
               ],
             ),
           ),
