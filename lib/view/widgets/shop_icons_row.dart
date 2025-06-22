@@ -24,7 +24,7 @@ class _ShopIconsRowState extends State<ShopIconsRow> {
   void initState() {
     super.initState();
     _scrollController.addListener(_onScroll);
-    _indicatorPosition = 16.0;
+    _indicatorPosition = 5.0;
   }
 
   void _onScroll() {
@@ -37,7 +37,7 @@ class _ShopIconsRowState extends State<ShopIconsRow> {
       setState(() {
         if (scrollOffset <= 0) {
           _selectedIndex = 0;
-          _indicatorPosition = 16.0;
+          _indicatorPosition = 5.0;
         } else {
           _selectedIndex = scrollableIconIndex + 1;
           _indicatorPosition =
@@ -68,7 +68,7 @@ class _ShopIconsRowState extends State<ShopIconsRow> {
                     onTap: () {
                       setState(() {
                         _selectedIndex = 0;
-                        _indicatorPosition = 16.0;
+                        _indicatorPosition = 5.0;
                       });
                       // Scroll back to beginning
                       _scrollController.animateTo(
@@ -156,7 +156,7 @@ class _ShopIconsRowState extends State<ShopIconsRow> {
           // Long thin line that spans the entire width
           Positioned(
             bottom: 2,
-            left: 16,
+            left: 5,
             right: 16,
             child: Container(
               height: 1,

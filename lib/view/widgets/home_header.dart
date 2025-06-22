@@ -12,7 +12,7 @@ class HomeHeader extends StatelessWidget {
       ),
       child: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(12),
+          padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -22,7 +22,7 @@ class HomeHeader extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 44,
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
               //const SizedBox(height: 12),
@@ -145,7 +145,7 @@ class HomeHeader extends StatelessWidget {
                               'CREDIT',
                               style: TextStyle(
                                 fontSize: 11,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w400,
                                 color: Color(0xFF244B3A),
                                 letterSpacing: 1.0,
                               ),
@@ -176,7 +176,7 @@ class HomeHeader extends StatelessWidget {
                               'POINTS',
                               style: TextStyle(
                                 fontSize: 11,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w400,
                                 color: Color(0xFF244B3A),
                                 letterSpacing: 1.0,
                               ),
@@ -207,7 +207,7 @@ class HomeHeader extends StatelessWidget {
                               'PACKAGE',
                               style: TextStyle(
                                 fontSize: 11,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w400,
                                 color: Color(0xFF244B3A),
                                 letterSpacing: 1.0,
                               ),

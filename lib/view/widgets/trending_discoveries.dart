@@ -142,8 +142,8 @@ class TrendingDiscoveries extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(
               borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(12),
-                topRight: Radius.circular(12),
+                topLeft: Radius.circular(5),
+                topRight: Radius.circular(5),
               ),
               image: DecorationImage(
                 image: AssetImage(imageUrl),

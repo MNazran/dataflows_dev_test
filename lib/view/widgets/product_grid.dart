@@ -51,6 +51,15 @@ class ProductGrid extends StatelessWidget {
       'discount': null,
       'hasDiscount': false,
     },
+    {
+      'imageUrl': 'assets/images/image.jpg',
+      'title': 'Lorem Ipsum',
+      'description': 'Lorem ipsum dolor sit amet consectetur adipiscing elit',
+      'price': 'RM 60.00',
+      'originalPrice': 'RM 120.00',
+      'discount': '50%',
+      'hasDiscount': true,
+    },
   ];
 
   @override
