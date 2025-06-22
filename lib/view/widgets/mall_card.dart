@@ -27,8 +27,8 @@ class MallCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Product image with discount badge (only if hasDiscount is true)
-          Expanded(
-            flex: 3,
+          SizedBox(
+            height: 180,
             child: Stack(
               children: [
                 Container(
@@ -58,8 +58,8 @@ class MallCard extends StatelessWidget {
           ),
 
           // Product details
-          Expanded(
-            flex: 2,
+          SizedBox(
+            height: 140,
             child: Padding(
               padding: const EdgeInsets.all(12),
               child: Column(
@@ -74,7 +74,7 @@ class MallCard extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 4),
-                  Expanded(
+                  Flexible(
                     child: Text(
                       product['description'],
                       style: const TextStyle(

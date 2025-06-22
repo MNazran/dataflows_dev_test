@@ -17,8 +17,7 @@ class ProductGrid extends StatelessWidget {
     {
       'imageUrl': 'assets/images/image.jpg',
       'title': 'Lorem Ipsum',
-      'description':
-          'Lorem ipsum dolor sit amet consectetur adipiscing elit consectetur adipiscing elit',
+      'description': 'Lorem ipsum dolor sit amet',
       'price': 'RM 100.00',
       'originalPrice': 'RM 200.00',
       'discount': '50%',
@@ -36,7 +35,8 @@ class ProductGrid extends StatelessWidget {
     {
       'imageUrl': 'assets/images/image.jpg',
       'title': 'Lorem Ipsum',
-      'description': 'Lorem ipsum dolor sit amet consectetur adipiscing elit',
+      'description':
+          'Lorem ipsum dolor sit amet consectetur adipiscing elit dolor sit amet consectetur adipiscing elitdolor sit amet consectetur adipiscing elit',
       'price': 'RM 90.00',
       'originalPrice': null,
       'discount': null,
@@ -68,8 +68,8 @@ class ProductGrid extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        crossAxisSpacing: 12,
-        mainAxisSpacing: 12,
+        crossAxisSpacing: 8,
+        mainAxisSpacing: 8,
         childAspectRatio: 0.5,
       ),
       itemCount: _products.length,

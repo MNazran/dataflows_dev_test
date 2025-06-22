@@ -12,7 +12,8 @@ class HomeHeader extends StatelessWidget {
       ),
       child: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
+          padding:
+              const EdgeInsets.only(top: 10, left: 15, right: 15, bottom: 15),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -59,7 +60,7 @@ class HomeHeader extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 10),
               // Appointment Details Row
               Row(
                 children: [
@@ -129,7 +130,7 @@ class HomeHeader extends StatelessWidget {
 
               // Credit, Points, Package Container
               Container(
-                padding: const EdgeInsets.all(1),
+                padding: const EdgeInsets.all(0.7),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(35),
@@ -164,7 +165,7 @@ class HomeHeader extends StatelessWidget {
                     ),
                     Container(
                       width: 1,
-                      height: 40,
+                      height: 48,
                       color: const Color(0xFFCBCBCB),
                     ),
                     Expanded(
@@ -195,7 +196,7 @@ class HomeHeader extends StatelessWidget {
                     ),
                     Container(
                       width: 1,
-                      height: 40,
+                      height: 48,
                       color: const Color(0xFFCBCBCB),
                     ),
                     Expanded(
@@ -227,7 +228,7 @@ class HomeHeader extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 10),
             ],
           ),
         ),
