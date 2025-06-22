@@ -1,9 +1,9 @@
 import 'package:dataflows_dev_test/controllers/navigation_controller.dart';
-import 'package:dataflows_dev_test/view/account_screen.dart';
-import 'package:dataflows_dev_test/view/discover_screen.dart';
-import 'package:dataflows_dev_test/view/home_screen.dart';
-import 'package:dataflows_dev_test/view/inbox_screen.dart';
-import 'package:dataflows_dev_test/view/mall_screen.dart';
+import 'package:dataflows_dev_test/view/screens/account_screen.dart';
+import 'package:dataflows_dev_test/view/screens/discover_screen.dart';
+import 'package:dataflows_dev_test/view/screens/home_screen.dart';
+import 'package:dataflows_dev_test/view/screens/inbox_screen.dart';
+import 'package:dataflows_dev_test/view/screens/mall_screen.dart';
 import 'package:dataflows_dev_test/view/widgets/custom_bottom_navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
