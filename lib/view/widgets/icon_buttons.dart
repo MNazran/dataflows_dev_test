@@ -29,7 +29,8 @@ class IconButtonsExplicit extends StatelessWidget {
     return Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: onTap,
+          onTap: () {},
+          borderRadius: BorderRadius.circular(38),
           child: Image.asset(
             imagePath,
             fit: BoxFit.contain,
